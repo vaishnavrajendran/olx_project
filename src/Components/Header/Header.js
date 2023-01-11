@@ -36,9 +36,10 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span>{user? user.displayName:'Login'}</span>
+          <span>{user? `Welcome ${user.displayName}`:'Login'}</span>
           <hr />
         </div>
+          {user && <span>Logout</span>}
 
         <div className="sellMenu">
           <SellButton></SellButton>
